@@ -1,0 +1,16 @@
+{{#if enquirySubmitted}}
+    <p>Your response has been submitted sucsessfuly!</p>
+{{/if}}
+
+<form method="post" action='/api/event'>
+    <br/><br/>
+    <input type="text" name="name" placeholder="Name"/>
+    <br/><br/>
+    <input type="datetime-local" name="startTime" placeholder="Start Time"/>
+    <br/><br/>
+    <input type="datetime-local" name="endTime" placeholder="End Time"/>
+    <br/><br/>
+    <textarea name="description" placeholder="Event Description" rows="4"></textarea>
+    <br/><br/>
+    <button type="submit">Submit</button>
+</form>
